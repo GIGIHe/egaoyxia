@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点哦</title>
+    <style>
+        body{background-color:pink;}
+    .outer{width: 400px;height: 400px;perspective: 500px;position: relative;margin: 20px auto;}
+    
+    .outer img{transition: all 3s ease 0s;
+        width: 300px;height: 300px;
+        border-radius: 40%;   position: absolute;top: 40px;left: 0;}
+        .outer img:nth-of-type(1){width: 50px;height: 50px;position:absolute;top: 0;left: 0;opacity: .8;}
+        .outer img:nth-of-type(2){
+		transform: rotateY(180deg);
+        backface-visibility: hidden;
+		
+	}
+    .outer p{transition:all 3s ease 0s;color: purple;font-weight: bold;margin-left: 55px;
+    }
+    .outer:hover p{color: red;font-size: 18px;font-weight: bold;}
+
+  .outer:hover img:nth-of-type(2){
+		transform: rotateY(360deg);
+        backface-visibility: hidden;
+	} 
+    .outer:hover img:nth-of-type(3){
+		transform: rotateY(180deg);
+        backface-visibility: hidden;
+	}
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <img src="./imacss3/20/2.jpg" alt="">
+        <p>么么哒，非诚勿扰哦</p>
+        <img src="./imacss3/psb (2).jpg" alt="">
+        <img src="./imacss3/psb (1).jpg" alt="">
+    </div>
+</body>
+</html>
